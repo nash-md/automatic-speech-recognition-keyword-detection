@@ -1,0 +1,31 @@
+{
+  "name": "Twilio Automatic Speech Recognition Demo",
+  "description": "A demo showing Twilio ASR on a phone call",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["asr", "twilio", "voice"],
+  "image": "heroku/nodejs",
+  "repository": "https://github.com/nash-md/automatic-speech-recognition-keyword-detection",
+  "success_url": "/",
+  "env": {
+    "TWILIO_ACCOUNT_SID": {
+      "description": "Your Twilio accountSid",
+      "value": "accountSid"
+    },
+    "TWILIO_API_KEY_SID": {
+      "description": "API Keys are revokable credentials for the Twilio API. You can create it here: https://www.twilio.com/console/dev-tools/api-keys",
+      "value": "apiKeySid"
+    },
+    "TWILIO_API_KEY_SECRET": {
+      "description": "API Keys are revokable credentials for the Twilio API.",
+      "value": "apiKeySecret"
+    },
+     "TWILIO_SYNC_SERVICE_SID": {
+      "description": "A Sync service to synchronice the speech-to-text result in real-time to the browser",
+      "value": "syncServiceSid"
+    },
+    "TWILIO_PHONE_NUMBER": {
+      "description": "A Twilio phone number uses for the outbound call.",
+      "value": "phoneNumber"
+    }
+  }
+}

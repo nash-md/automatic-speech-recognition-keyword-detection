@@ -1,0 +1,25 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "rules": {
+    "no-console": 0,
+    "no-unused-vars": 0,
+    "no-undef": 0,
+    "require-jsdoc": 0,
+    "no-useless-escape": 0,
+    "guard-for-in": 0,
+    "new-cap": 0,
+    "prefer-const": "error",
+    "no-invalid-this": 0,
+    "space-before-function-paren": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "max-len": ["error", { "ignoreTemplateLiterals": true, "ignoreStrings": true, "ignoreRegExpLiterals": true, "ignoreUrls": true }]
+  }
+}

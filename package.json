@@ -1,0 +1,36 @@
+{
+  "name": "automatic-speech-recognition-keyword-detection",
+  "description": "Twilio Automatic Speech Recognition Intent Detection Demo",
+  "version": "1.0.0",
+  "author": "Matthias Damm",
+  "contributors": [],
+  "license": "MIT",
+  "main": "app.js",
+  "repository": "https://github.com/nash-md/automatic-speech-recognition-keyword-detection",
+  "keywords": [
+    "Tessel",
+    "ASR",
+    "Twilio",
+    "Automatic",
+    "Speech",
+    "Recognition"
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "twilio": "3.9.x"
+  },
+  "devDependencies": {
+    "eslint-config-google": "latest"
+  },
+  "engines": {
+    "node": "^6.5.x"
+  },
+  "readme": "Voice Intent Analysis with Twilio",
+  "scripts": {
+    "eslint": "eslint . || exit 0",
+    "start": "node .",
+    "start:dev": "nodenv -f ."
+  }
+}

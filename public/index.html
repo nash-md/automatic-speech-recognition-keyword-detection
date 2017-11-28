@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Twilio Automatic Speech Recognition Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+
+<body ng-app="app">
+    <div class="container" ng-controller="ApplicationController">
+        <div class="row  justify-content-md-center">
+            <div class="col col-lg-10">
+                <h1 class="display-4">Twilio Speech Recognition</h1>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <div class="jumbotron">
+                    <div ng-controller="SyncController" ng-init="getToken()" class="lead" ng-bind-html="sync.text | HighlightLabel:labels"></div>
+            
+                </div>
+                <form class="form-inline" ng-show="call.sid == null">
+                    <input ng-model="phone" type="text" class="form-control" id="phone" placeholder="Phone" style="margin-right:10px; width: 240px">
+                    <select style="margin-right:10px; width: 140px" ng-model="language" class="form-control" convert-to-number>
+                        <option value="en-US" selected="selected">English</option>
+                        <option value="de-DE">German</option>
+                        <option value="sv-SE">Swedish</option>
+                    </select>
+                    <button ng-click="call()" type="button" class="btn btn-primary">Call</button>
+                </form>
+                <small class="text-muted" style="margin-top: 10px; display: block">{{identity}} | {{sync.state}}</small>
+                <small ng-show="sync.call.sid != null" class="text-muted" style="margin-top: 10px; display: block">{{language}} | {{sync.call.to}} | {{sync.call.status}}</small>
+            </div>
+            <div class="col col-lg-4">
+                <div class="card" ng-controller="LabelController">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <button ng-click="remove($index)" style=" margin-right: 5px; margin-bottom: 5px" ng-repeat="label in labels track by $index" class="btn btn-light btn-sm">
+                                {{label}}
+                                <span style="background-image: url(/svg/icon-delete.svg); background-repeat: no-repeat; background-position: center right; background-size: 75%; padding-right: 15px; cursor: pointer;">&nbsp;&nbsp;</span>
+                            </button>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="form-inline">
+                            <input ng-model="name" type="text" class="form-control" id="name" placeholder="Keyword" style="margin-right:10px">
+                            <button ng-click="add()" type="submit" class="btn btn-primary">Add</button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://media.twiliocdn.com/sdk/js/sync/v0.6/twilio-sync.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/ApplicationController.js"></script>
+    <script src="scripts/LabelController.js"></script>
+    <script src="scripts/SyncController.js"></script>
+    <script src="scripts/directives/HighlightLabelDirective.js"></script> 
+</body>
+
+</html>
