@@ -2,8 +2,6 @@
 
 ![Twilio Automatic Speech Recognition](https://raw.githubusercontent.com/nash-md/automatic-speech-recognition-keyword-detection/master/twilio-asr-example.png)
 
-https://raw.githubusercontent.com/nash-md/automatic-speech-recognition-keyword-detection/master/twilio-asr-example.png
-
 This application demonstrates Twilio automatic speech recognition with a voice call. With speech recognition you can detect the intent of a phone call quickly in real-time.
 
 ## Installation
