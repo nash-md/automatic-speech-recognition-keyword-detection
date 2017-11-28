@@ -1,5 +1,5 @@
 {
-  "name": "Twilio Automatic Speech Recognition Demo",
+  "name": "Twilio ASR Demo",
   "description": "A demo showing Twilio ASR on a phone call",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
   "keywords": ["asr", "twilio", "voice"],

@@ -1,6 +1,8 @@
 # Twilio Automatic Speech Recognition Intent Detection
 
-![Twilio Automatic Speech Recognition](twilio_asr_example.png)
+![Twilio Automatic Speech Recognition](https://raw.githubusercontent.com/nash-md/automatic-speech-recognition-keyword-detection/master/twilio-asr-example.png)
+
+https://raw.githubusercontent.com/nash-md/automatic-speech-recognition-keyword-detection/master/twilio-asr-example.png
 
 This application demonstrates Twilio automatic speech recognition with a voice call. With speech recognition you can detect the intent of a phone call quickly in real-time.
 
@@ -51,9 +53,9 @@ node app.js
 
 ### Run the Demo
 
-After the installation has completed please open `https://<your_application_name>/` in a web browser. You can now add keyword to the list which are later uses for the real-time speech intent detection. Select a language for the speech recognition and set a phone number you want to call. 
+After the installation has completed please open `https://<your_application_name>/` in a web browser. You can now add keywords to the list which are later used for the real-time speech intent detection. Select a language for the speech recognition and set a phone number you want to call. 
 
-Please check that you have suffient balance and you set [Voice Geographic Permissions](https://www.twilio.com/console/voice/settings/geo-permissions) to allow your Twilio account to call this phone number. When you pick up the phone Twilio ASR will detect the voice and convert the audio signal into text. The text content is pushed to the browser and if a matching word from the keyword list is found it is highlighted.
+Please check that you have sufficient balance and you have set [Voice Geographic Permissions](https://www.twilio.com/console/voice/settings/geo-permissions) to allow your Twilio account to call this phone number. When you pick up the phone, Twilio ASR will detect the voice and convert the audio signal into text. The text content is pushed to the browser and if a matching word from the keyword list is found it is highlighted.
 
 ## Questions?
 
