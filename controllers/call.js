@@ -12,9 +12,9 @@ module.exports.partialResult = function (req, res) {
   utilRemoteSync
     .update(req.params.identity, { text: req.body.UnstableSpeechResult })
     .then((doc) => {
-      res.status(200).end();
+      res.set({ 'Content-Type': 'text/xml' }).status(200).end();
     }).catch((error) => {
-      res.status(500).end();
+      res.set({ 'Content-Type': 'text/xml' }).status(500).end();
     });
 };
 
