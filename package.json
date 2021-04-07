@@ -16,16 +16,16 @@
     "Recognition"
   ],
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "compression": "^1.7.1",
-    "express": "^4.16.2",
-    "twilio": "3.9.x"
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "twilio": "^3.59.0"
   },
   "devDependencies": {
     "eslint-config-google": "latest"
   },
   "engines": {
-    "node": "^6.5.x"
+    "node": "^12.x"
   },
   "readme": "Voice Intent Analysis with Twilio",
   "scripts": {
